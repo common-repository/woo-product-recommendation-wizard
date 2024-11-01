@@ -1,0 +1,256 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.product_cost_left_div{
+    float: left;
+}
+.option_image_div{
+    width: 50%;
+    float: left;
+}
+
+
+.accordion, .accordion * {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+.accordion {overflow:hidden; border-radius:3px;}
+.accordion-section-title {width:100%;padding:6px;padding-left: 20px;display:inline-block;background:#ffffff;transition:all linear 0.15s;/* Type */font-size:1.200em; color:#000; border: 0px;}
+.accordion-section-title.active, .accordion-section-title:hover {background:#FFF;/* Type */text-decoration:none;color:#000;}
+.accordion-section:last-child .accordion-section-title {border-bottom:none;}
+.accordion-section-content {padding:15px;display:none;border-top: 1px solid #ccc;}
+.accordion-section-title {text-decoration: none;}
+.accordion-section .enable-disable {margin-bottom: 15px;}
+.accordion {margin-top:15px;}
+.accordion-section {margin: 0; margin-bottom: 12px;border: 1px solid #ccc;}
+.set_accordion_classes {width: 100%;}
+.set_accordion_classes .enable-disable {display: inline-block;}
+.set_accordion_classes .accordion-tab-link {float: right;}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+    border: 1px solid #999999/*{borderColorHover}*/;
+    background: #dadada/*{bgColorHover}*/ url(images/ui-bg_glass_75_dadada_1x400.png)/*{bgImgUrlHover}*/ 50%/*{bgHoverXPos}*/ 50%/*{bgHoverYPos}*/ repeat-x/*{bgHoverRepeat}*/;
+    font-weight: normal/*{fwDefault}*/;
+    color: #212121/*{fcHover}*/;
+}
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited {
+    color: #212121/*{fcHover}*/;
+    text-decoration: none;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+    border: 1px solid #aaaaaa/*{borderColorActive}*/;
+    background: #ffffff/*{bgColorActive}*/ url(images/ui-bg_glass_65_ffffff_1x400.png)/*{bgImgUrlActive}*/ 50%/*{bgActiveXPos}*/ 50%/*{bgActiveYPos}*/ repeat-x/*{bgActiveRepeat}*/;
+    font-weight: normal/*{fwDefault}*/;
+    color: #212121/*{fcActive}*/;
+}
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+    color: #212121/*{fcActive}*/;
+    text-decoration: none;
+}
+
+.ui-accordion .ui-accordion-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin-top: 2px;
+    padding: .5em .5em .5em .7em;
+    min-height: 0; /* support: IE7 */
+    border-top: 1px solid #cccccc; 
+    border-bottom: 1px solid #cccccc;
+}
+
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon{
+    position: relative;
+    left: -75px;
+    top: 50%;
+    margin-top: 4px;
+    float: right;
+    visibility: hidden;
+}
+
+.ui-accordion .ui-accordion-icons {
+    padding-left: 1.2em;
+}
+.ui-accordion .ui-accordion-noicons {
+    padding-left: .7em;
+}
+.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+    padding-left: 2.2em;
+}
+/*.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+    position: absolute;
+    left: .5em;
+    top: 50%;
+    margin-top: -8px;
+}*/
+.ui-accordion .ui-accordion-content {
+    padding: 2em 1.2em;
+    border-top: 0;
+    overflow: auto;
+}
+.options_rank_class h3 i { 
+    position:absolute;
+    right: 70px;
+    top:14px;
+    visibility: hidden;
+    -webkit-transition:all 300ms ease-in 0s;
+    -moz-transition: all 300ms ease-in 0s;
+    -o-transition: all 300ms ease-in 0s;
+    transition: all 300ms ease-in 0s;
+}
+
+.ui-state-active i {
+    color: #ACD4CE;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/*#accordion .ui-icon { display: none; }
+#accordion .ui-accordion-header a { padding-left: 0 }*/
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+    background: #0085ba !important;
+    border: 1px solid #0085ba !important;
+}
+
+.accordian_custom_class{
+    padding: 10px !important;
+    border: 1px solid #ddd !important;
+}
+.options_rank_class h3 a.delete{
+    color: red;
+    font-weight: 600;
+    line-height: 26px;
+    text-decoration: none;
+    position: relative;
+    /*visibility: hidden;*/
+    float: right;
+    font-size: 14px !important;
+}
+/*.options_rank_class h3:hover a.delete{
+    visibility: visible;
+    background: none !important;
+}*/
+/*.options_rank_class h3:hover span.ui-accordion-header-icon{
+    visibility: visible;
+}*/
+/*
+.wprw-main-table.res-cl > div {
+    display: block;
+    margin-top: 15px;
+}
+.pagination.text-center {
+    display: block;
+}
+#pagination > li {
+    display: inline-block;
+}
+.wprw-main-table.res-cl > div:after{
+    content: " ";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 0;
+}
+.wprw-main-table.res-cl > div:before{
+    content: " ";
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+#pagination{float: right}*/
+
+.tablenav .tablenav-pages {
+    color: hsl(0, 0%, 33%);
+    cursor: default;
+    float: right;
+    height: 28px;
+    margin-top: 3px;
+}
+
+.tablenav .displaying-num {
+    margin-right: 7px;
+}
+.tablenav .tablenav-pages a, .tablenav-pages-navspan {
+    background: hsl(0, 0%, 90%) none repeat scroll 0 0;
+    border: 1px solid hsl(0, 0%, 80%);
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    min-width: 17px;
+    padding: 3px 5px 7px;
+    text-align: center;
+}
+.screen-reader-text, .screen-reader-text span, .ui-helper-hidden-accessible {
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    overflow-wrap: normal !important;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.screen-reader-text, .screen-reader-text span, .ui-helper-hidden-accessible {
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    overflow-wrap: normal !important;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.half_width{
+    width: 50% !important;
+}
+
+.option_single_image_src{
+    height: auto;
+}
+
+.chosen-container{
+    width: 25% !important;
+}
+.option_single_upload_file.button {
+    margin-right: 15px;
+}
+.error_msg {
+    color: hsl(0, 100%, 50%);
+}
+.woocommerce_wprw_tab_descirtion {
+    padding-left: 5px;
+}
+#accordion .ui-accordion-content {
+    max-height: 300px;
+    overflow-y: auto;
+}
+.chosen-rtl .chosen-single span{
+    margin-right: 0 !important;
+    margin-left: 10px !important;
+}
+.chosen-rtl .chosen-single div {
+    right: auto !important;
+    right: 3px !important;
+    left: inherit !important;
+}
+.chosen-container .chosen-results{
+    max-height: 100px !important;
+}
